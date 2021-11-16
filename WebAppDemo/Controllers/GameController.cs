@@ -27,29 +27,26 @@ namespace MvcBasics.Controllers
             string message = "";
             int nrOfGuesses = 0;
 
-            if (guess > 0 || guess <= 100)
+        if (guess > 0 || guess <= 100)
             {
 
-                int number = (int)HttpContext.Session.GetInt32("Number");
-                if (!string.IsNullOrWhiteSpace(number.ToString()))
+            int number = (int)HttpContext.Session.GetInt32("Number");
+            if (!string.IsNullOrWhiteSpace(number.ToString()))
 
-                    {
-                        string GuessesStored = Request.Cookies["CountGuesses"];
-                        nrOfGuesses = Int32.Parse(GuessesStored) + 1;
-                        if (Request.Cookies["CountGuesses"] != null)
-                    {
-                        ViewBag.guessesCookie = GuessesStored;
-                    }
+                {
+                    string GuessesStored = Request.Cookies["CountGuesses"];
+                    nrOfGuesses = Int32.Parse(GuessesStored) + 1;
+                if (Request.Cookies["CountGuesses"] != null)
+                {
+                    ViewBag.guessesCookie = GuessesStored;
+                }
 
                     message = Game.NumberGuess(guess, number);
                 }
-                else
-                    {return RedirectToAction(nameof(GuessingGame));}
 
-            }
+            else {return RedirectToAction(nameof(GuessingGame));}}
 
-            else
-                {message = "Enter a number beween 1-100!";}
+            else {message = "Enter a number beween 1-100!";}
 
             if (!string.IsNullOrWhiteSpace(nrOfGuesses.ToString()))
             {
@@ -62,11 +59,9 @@ namespace MvcBasics.Controllers
             ViewBag.nrOfGuesses = nrOfGuesses;
             ViewBag.msg = message;
 
-            if (message.Contains("correct"))
-                {return View("WinMessage");}
+            if (message.Contains("correct")){return View("WinMessage");}
 
-            else
-                {return View();}
+            else{return View();}
 
         }
     }
