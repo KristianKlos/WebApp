@@ -60,7 +60,6 @@ img {
     background: transparent;
 }
 
-
 form {
     display: flex;
     flex-direction: column;
@@ -112,17 +111,9 @@ button {
 button:hover {background-color: gray;}
 .button:hover { background-color: gray;}
 
-section{
-    justify-content: left;
-}
-
-article{
-    margin-bottom: 30px;
-}
-
 .guessForm input {
     margin: 15px 0;
-    align-self: center;  
+    align-self: center;
 }
 
 footer {
