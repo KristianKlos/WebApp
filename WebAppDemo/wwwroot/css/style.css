@@ -1,0 +1,171 @@
+﻿body {
+    font-family: 'Garamond', sans-serif;
+    background-color: rgb(27 27 27);
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background: darkslategray;
+    color: white;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;   
+}
+
+
+a span {
+        color: white;
+        font-weight: bold;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+h1 {text-align: center;}
+
+h2 {text-align: center;}
+
+img {
+    height: 150px;
+    background: transparent;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+form div {
+     margin-bottom: 10px;
+}
+
+input[type=radio] {
+    
+}
+
+input[type=number] {
+    width: 90px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid white;
+    align-items: center;
+    margin: 10px 0px 10px;
+}
+
+button {
+    width: 80px;
+    border-radius: 3px;
+    padding: 10px 10px;
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.4s;
+    
+}
+.button {
+    width: 100px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: darkslategray;
+    color: white;
+    align-self: center;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.4s;
+}
+button:hover {background-color: gray;}
+.button:hover { background-color: gray;}
+
+footer {
+
+}
+
+dt{
+
+}
+
+section{
+    justify-content: left;
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+.
+
+.guessForm input {
+    margin: 15px 0;
+    align-self: center;
+    
+}
+
+.message{
+    color: blue;
+}
+
+.guesses{
+    font-style: italic;
+}
+
+.fa {
+   font-size: 36px;
+   color: white; 
+   margin-left: 15px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: darkslategrey;
+}

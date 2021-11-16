@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>WebAppDemo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a asp-action="Index" asp-controller="Home">Index</a></li>
+                <li><a asp-action="FeverCheck" asp-controller="Doctor">Fever check</a></li>
+                <li><a asp-action="GuessingGame" asp-controller="Game">Guessing game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer><p>&copy; Kristian Klos</p></footer>
+</body>
+</html>

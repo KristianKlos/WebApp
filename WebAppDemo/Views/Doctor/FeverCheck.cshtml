@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <h1>Check your temperature with Dr.Zoidberg</h1>
+
+    <img src="/css/Images/zoidberg.png" alt="Zoidberg">
+
+
+    <form method="post">
+        <div>
+            <input checked="checked"
+                   id="tempType"
+                   type="radio"
+                   name="tempType"
+                   value="Celsius" />
+            <label for="Celsius">Celsius</label><br>
+
+            <input id="tempType"
+                   type="radio"
+                   name="tempType"
+                   value="Fahrenheit" />
+            <label for="Fahrenheit">Fahrenheit</label>
+
+        </div>
+        <div>
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" />
+        </div>
+        <button>Check</button>
+    </form>
+</main>
