@@ -1,6 +1,7 @@
 ﻿body {
     font-family: 'Garamond', sans-serif;
     background-color: rgb(27 27 27);
+    color: white;
     margin: auto;
     min-height: 100vh;
     position: relative;
@@ -11,26 +12,23 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 110px;
+    height: 100px;
     background: darkslategray;
     color: white;
 }
 
-.logo {
-    margin-left: 50px;
-}
+.logo {margin-left: 50px;}
 
 nav ul {
     display: flex;
     margin-right: 50px;
 }
 
-ul {
-    list-style: none;
-}
+ul {list-style: none;}
 
 nav li {
     margin-right: 20px;
+    align-items: center;
 }
 
 a {
@@ -38,7 +36,6 @@ a {
     color: white;
     font-weight: bold;   
 }
-
 
 a span {
         color: white;
@@ -50,11 +47,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
- 
-    
     width: 50%;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 
 h1 {text-align: center;}
@@ -77,11 +71,6 @@ form {
 form div {
      margin-bottom: 10px;
 }
-
-input[type=radio] {
-    
-}
-
 input[type=number] {
     width: 90px;
     padding: 5px;
@@ -123,14 +112,6 @@ button {
 button:hover {background-color: gray;}
 .button:hover { background-color: gray;}
 
-footer {
-
-}
-
-dt{
-
-}
-
 section{
     justify-content: left;
 }
@@ -139,27 +120,11 @@ article{
     margin-bottom: 30px;
 }
 
-.
-
 .guessForm input {
     margin: 15px 0;
-    align-self: center;
-    
+    align-self: center;  
 }
 
-.message{
-    color: blue;
-}
-
-.guesses{
-    font-style: italic;
-}
-
-.fa {
-   font-size: 36px;
-   color: white; 
-   margin-left: 15px;
-}
 footer {
     position: absolute;
     width: 100%;
