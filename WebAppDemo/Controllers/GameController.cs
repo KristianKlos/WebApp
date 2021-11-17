@@ -14,7 +14,7 @@ namespace MvcBasics.Controllers
         public IActionResult GuessingGame()
         {
             Random random = new Random();
-            HttpContext.Session.SetInt32("Number", random.Next(1, 1));
+            HttpContext.Session.SetInt32("Number", random.Next(1, 100));
 
             CookieOptions option = new CookieOptions();
             option.Expires = DateTime.Now.AddHours(1);
