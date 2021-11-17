@@ -23,7 +23,7 @@ namespace MvcBasics.Models
 
             else if (tempType == "Fahrenheit")
             {
-                if (temperature >= 100.4)
+                if (temperature >= 99.5)
                     {message = $"Your temperature is { temperature }. You appear to have a fever.";}
                 else
                     {message = $"Your temperature is { temperature }. You don't have fever.";}

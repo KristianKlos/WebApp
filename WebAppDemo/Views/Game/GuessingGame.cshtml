@@ -6,9 +6,8 @@
     <h1>Guessing Game</h1>
 
     @if (ViewBag.msg != null)
-    {
-        <p class="message">@ViewBag.msg</p>
-    }
+    {<p class="message">@ViewBag.msg</p>}
+
     <form class="guessForm" asp-action="GuessingGame" asp-controller="Game" method="post">
         <label for"game">Pick a number between 1-100.</label>
         <input type="number" id="guess" name="guess" />
@@ -17,6 +16,6 @@
 
     <p class="guesses">
         Number of guesses:@if (ViewBag.nrOfGuesses != null)
-        {@ViewBag.nrOfGuesses}
+            {@ViewBag.nrOfGuesses}
     </p>
 </main>

@@ -1,21 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Fever-result";
+    ViewData["Title"] = "Fever result";
 }
 
 <main>
     <h1>Fever result from Dr.Zoidberg</h1>
-
     <img src="/css/Images/zoidberg.png" alt="Zoidberg">
 
     @if (ViewBag.temp != null && ViewBag.type != null)
     {
-        
         <p>@ViewBag.message</p>
         <div class="button">
             <a asp-controller="Doctor" asp-action="FeverCheck">Check again</a>
         </div>
     }
-
-
 </main>
 
