@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "WinScreen";
+}
+<main>
+    @if (ViewBag.guess != null && ViewBag.nrOfGuesses != null)
+    {
+    <h1>You did it!</h1>
+    <h2>@ViewBag.guess was correct.</h2>
+    }
+    <div class="button">
+        <a asp-controller="Game" asp-action="GuessingGame">Try again</a>
+    </div>
+
+</main>

@@ -14,7 +14,7 @@ namespace MvcBasics.Controllers
         public IActionResult GuessingGame()
         {
             Random random = new Random();
-            HttpContext.Session.SetInt32("Number", random.Next(1, 100));
+            HttpContext.Session.SetInt32("Number", random.Next(1, 1));
 
             CookieOptions option = new CookieOptions();
             option.Expires = DateTime.Now.AddHours(1);
@@ -37,12 +37,10 @@ namespace MvcBasics.Controllers
                     string GuessesStored = Request.Cookies["CountGuesses"];
                     nrOfGuesses = Int32.Parse(GuessesStored) + 1;
                 if (Request.Cookies["CountGuesses"] != null)
-                {
-                    ViewBag.guessesCookie = GuessesStored;
-                }
 
-                    message = Game.NumberGuess(guess, number);
-                }
+                {ViewBag.guessesCookie = GuessesStored;}
+
+                message = Game.NumberGuess(guess, number);}
 
             else {return RedirectToAction(nameof(GuessingGame));}}
 
@@ -59,7 +57,7 @@ namespace MvcBasics.Controllers
             ViewBag.nrOfGuesses = nrOfGuesses;
             ViewBag.msg = message;
 
-            if (message.Contains("correct")){return View("WinMessage");}
+            if (message.Contains("correct")){return View("WinScreen");}
 
             else{return View();}
 

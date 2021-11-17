@@ -12,15 +12,10 @@ namespace MvcBasics.Models
 
 
             if (guess > number)
-            {
-                return $"{guess} is too high";
-            }
+            {return $"{guess} is too high";}
 
             if (guess < number)
-            {
-                return $"{guess} is too low";
-            }
-
+            {return $"{guess} is too low";}
 
             return "You guessed the correct number";
         }
