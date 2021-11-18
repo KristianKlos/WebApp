@@ -12,22 +12,16 @@ namespace MvcBasics.Models
 
             string message = "";
 
-            if (tempType == "Celsius")
-            {
-                if (temperature >= 38)
-                    {message = $"Your temperature is {temperature}. You appear to have a fever.";}
-                else
-                    {message = $"Your temperature is {temperature}. You don't have fever.";}
-
-            }
-
-            else if (tempType == "Fahrenheit")
-            {
-                if (temperature >= 99.5)
-                    {message = $"Your temperature is { temperature }. You appear to have a fever.";}
-                else
-                    {message = $"Your temperature is { temperature }. You don't have fever.";}
-            }
+            if (tempType == "Celsius" && temperature >= 38)
+            
+                { message = $"Your temperature is {temperature}°{tempType[0]}. You appear to have a fever."; }
+            
+            if (tempType == "Fahrenheit" && temperature >= 99.5)
+            
+                { message = $"Your temperature is {temperature}°{tempType[0]}. You appear to have a fever."; }  
+            
+            else
+                { message = $"Your temperature is {temperature}°{tempType[0]}. You don't have fever."; }
 
             return message;
 
